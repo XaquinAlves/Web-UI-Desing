@@ -19,5 +19,5 @@ div {
 .grad-d {
     width: 250px;
     border-radius: 50px;
-    background-image: conic-gradient(from 180deg, red, yellow, green , blue , cyan , transparent);
+    background-image: conic-gradient(from 180deg, red, yellow, green , blue , cyan , pink);
 }
