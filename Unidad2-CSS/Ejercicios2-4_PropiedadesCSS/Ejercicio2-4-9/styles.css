@@ -21,7 +21,7 @@ a:link {
 
 a:visited {
     color: red;
-    font-style: normal;
+    font-style: normal; 
     font-weight: bold;
     text-decoration: underline;
 }
