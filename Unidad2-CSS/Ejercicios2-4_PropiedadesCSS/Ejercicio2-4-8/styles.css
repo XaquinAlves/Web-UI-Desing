@@ -1,0 +1,8 @@
+div {
+    min-height: 250px;
+}
+
+.grad-a {
+    background-image:  linear-gradient(45deg, red, orange, yellow, green, blue, #A346BC 90%);
+}
+
