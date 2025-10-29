@@ -9,7 +9,7 @@ nav {
 }
 
 nav a {
-    display: inline-block;
+    display: block;
     width: 100px;
     text-align: center;
     text-decoration: none;
@@ -17,4 +17,8 @@ nav a {
     background-color: black;
     padding: 10px 5px;
     border-right: 1px solid #336699;
+}
+
+nav li {
+    float: left;
 }
