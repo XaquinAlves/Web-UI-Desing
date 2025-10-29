@@ -1,0 +1,54 @@
+.padre {
+    width: 500px;
+    height: 500px;
+    margin: 100px;
+    background-color: orange;
+}
+
+#div1 {
+    width: 60px;
+    height: 60px;
+    position: static;
+    background-color: red;
+}
+
+#div2 {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: -10px;
+    left: 60px;
+    background-color: green;
+}
+
+#div3 {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 20px;
+    right: 100px;
+    background-color: orange;
+}
+
+#div4 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    color: #fffe00;
+    background-color: blue;
+}
+
+#div5 {
+    width: 60px;
+    height: 60px;
+    position: sticky;
+    top: 250px;
+    left: 300px;
+    background-color: blueviolet;
+}
+
+#alargador {
+    height: 2000px;
+}
