@@ -58,19 +58,28 @@
                 <p>El heading oculto deja su espacio</p>
                 <table>
                     <caption>Visibility: collapse</caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col class="collapsed">
+                        <col>
+                    </colgroup>
                     <tr>
                         <td>Celda visible</td>
                         <td class="collapsed">Celda colapsada</td>
+                        <td>Columna colapsada</td>
                         <td>Celda visible</td>
                     </tr>
                     <tr class="collapsed">
                         <td>Fila colapsada</td>
                         <td>Fila colapsada</td>
+                        <td>Columna colapsada</td>
                         <td>Fila colapsada</td>
                     </tr>
                     <tr>
                         <td>Celda visible</td>
                         <td>Celda visible</td>
+                        <td>Columna colapsada</td>
                         <td>Celda visible</td>
                     </tr>
                 </table>
