@@ -1,0 +1,113 @@
+
+/* Establece fuente, box-sizing y limpia margenes y rellenos*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Estilos generales */
+p {
+    line-height: 27px;
+}
+
+body {
+    background-color: #4a465b;
+}
+
+/* Estilos del menú de navegación */
+nav {
+    background-color: white;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 1em 1.5em;
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Estilos del aside */
+aside {
+    background-color: #161f26;
+    color: white;
+}
+
+@media (min-width: 800px){
+    aside {
+        float: right;
+        width: 25%;
+    }
+    .main {
+        float: left;
+        width: 75%;
+    }
+    footer {
+        clear: both;
+        width: 75%;
+    }
+    .widget {
+        margin: 1em 1.5em;
+    }
+    .posts {
+        margin: 5% 5% 10%;
+    }
+}
+
+aside a {
+    color: white;
+    text-decoration: none;
+}
+
+aside a:hover {
+    color: #8f8f8f;
+}
+
+aside h3 {
+    color: #ff8000;
+    border-bottom: 0.5px solid #ff8000;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside li {
+    border-bottom: 1px solid #8f8f8f;
+    padding: 0.5em 0px;
+}
+
+
+
+/* Estilos del main */
+.main {
+    background-color: white;
+    color: black;
+}
+
+.posts p {
+    margin-top: 1em;
+}
+
+/* Estilos del footer*/
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer > p {
+    padding: 1em;
+}
