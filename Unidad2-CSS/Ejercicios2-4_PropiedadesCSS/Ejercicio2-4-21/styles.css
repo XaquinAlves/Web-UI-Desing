@@ -1,0 +1,55 @@
+img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -10;
+}
+
+#zindex {
+    height: 485px;
+}
+
+.textdiv {
+    background-color: orange;
+    border: 1px black solid;
+    width: 100px;
+    height: 100px;
+}
+
+div.container {
+    display: inline-block;
+    margin: 20px;
+}
+
+#o-visible {
+    overflow: visible;
+}
+
+#o-hidden {
+    overflow: hidden;
+}
+
+#o-scroll {
+    overflow: scroll;
+}
+
+#o-auto {
+    overflow: auto;
+}
+
+.mostrar {
+    visibility: visible;
+}
+
+.ocultar {
+    visibility: hidden;
+}
+
+table, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.collapsed {
+    visibility: collapse;
+}

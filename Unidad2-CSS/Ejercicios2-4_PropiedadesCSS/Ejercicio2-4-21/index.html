@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Propiedades de visibilidad</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <main>
+            <div id="zindex">
+                <h2>Propiedad Z index</h2>
+                <img src="ping.jpg" alt="fondo" />
+            </div>
+            <div>
+                <h2>Propiedad Overflow</h2>
+                <div class="container">
+                    <h3>Overflow: visible</h3>
+                    <div id="o-visible" class="textdiv">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi aliquam erat sagittis felis hendrerit rhoncus. Ut
+                        iaculis accumsan mattis. Sed sagittis blandit augue vel
+                        posuere. Nullam ultricies justo in ligula.
+                    </div>
+                </div>
+                <div class="container">
+                    <h3>Overflow: hidden</h3>
+                    <div id="o-hidden" class="textdiv">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi aliquam erat sagittis felis hendrerit rhoncus. Ut
+                        iaculis accumsan mattis. Sed sagittis blandit augue vel
+                        posuere. Nullam ultricies justo in ligula.
+                    </div>
+                </div>
+                <div class="container">
+                    <h3>Overflow: scroll</h3>
+                    <div id="o-scroll" class="textdiv">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi aliquam erat sagittis felis hendrerit rhoncus. Ut
+                        iaculis accumsan mattis. Sed sagittis blandit augue vel
+                        posuere. Nullam ultricies justo in ligula.
+                    </div>
+                </div>
+                <div class="container">
+                    <h3>Overflow: auto</h3>
+                    <div id="o-auto" class="textdiv">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi aliquam erat sagittis felis hendrerit rhoncus. Ut
+                        iaculis accumsan mattis. Sed sagittis blandit augue vel
+                        posuere. Nullam ultricies justo in ligula.
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>Propiedad visibility</h2>
+                <h3 class="mostrar">Este heading esta visible</h3>
+                <h3 class="ocultar">Este heading esta oculto</h3>
+                <p>El heading oculto deja su espacio</p>
+                <table>
+                    <caption>Visibility: collapse</caption>
+                    <tr>
+                        <td>Celda visible</td>
+                        <td class="collapsed">Celda colapsada</td>
+                        <td>Celda visible</td>
+                    </tr>
+                    <tr class="collapsed">
+                        <td>Fila colapsada</td>
+                        <td>Fila colapsada</td>
+                        <td>Fila colapsada</td>
+                    </tr>
+                    <tr>
+                        <td>Celda visible</td>
+                        <td>Celda visible</td>
+                        <td>Celda visible</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>
