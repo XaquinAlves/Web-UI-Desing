@@ -1,0 +1,7 @@
+.content-box {
+    width: 250px;
+    height: 100px;
+    hyphens: auto;
+    border: 1px solid black;
+    overflow: auto;
+}
