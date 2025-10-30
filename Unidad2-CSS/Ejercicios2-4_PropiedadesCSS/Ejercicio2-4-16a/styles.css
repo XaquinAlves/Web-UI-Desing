@@ -3,7 +3,7 @@ div {
     height: 100px;
     margin: 25px;
     text-align: center;
-    line-height: 100px;
+    align-content: center;
 }
 
 .float {
