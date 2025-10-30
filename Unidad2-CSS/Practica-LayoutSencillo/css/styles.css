@@ -67,11 +67,9 @@ aside li {
     padding: 5% 0%;
 }
 
-
 .widget {
-    padding: 5% 5%;
+    padding: 5% 10%;
 }
-
 
 /* Estilos del main */
 .main {
@@ -114,8 +112,6 @@ footer > p {
         clear: both;
         width: 75%;
     }
-
-
 }
 
 
