@@ -16,7 +16,7 @@ body {
 }
 
 .contenedor {
-    margin: 20px 100px;
+    margin: 2% 10%;
 }
 
 /* Estilos del menú de navegación */
@@ -47,8 +47,11 @@ aside {
 }
 
 aside a {
+    display: block;
     color: white;
     text-decoration: none;
+    border-bottom: 0.5px solid #8f8f8f;
+    padding: 5% 0%;
 }
 
 aside a:hover {
@@ -58,7 +61,6 @@ aside a:hover {
 aside h3 {
     color: #ff8000;
     border-bottom: 0.5px solid #ff8000;
-    margin-top: 5%;
     margin-bottom: 5%;
 }
 
@@ -66,27 +68,26 @@ aside ul {
     list-style-type: none;
 }
 
-aside li {
-    border-bottom: 0.5px solid #8f8f8f;
+.widget {
+    margin: 0% 10% 0%; /* No encuentro una solición mejor*/
     padding: 5% 0%;
 }
 
-.widget {
-    padding: 5% 10%;
-}
 
 /* Estilos del main */
 .main {
     background-color: white;
     color: black;
+
 }
 
-.posts {
-    padding: 5% 5% 10%;
+.posts article {
+    margin: 5% 10% 0%;
+    padding-bottom: 5%; /* No encuentro una solición mejor*/
 }
 
-.posts p {
-    margin-top: 2.5%;
+.posts p, h2 {
+    margin-top: 5%;
 }
 
 /* Estilos del footer*/
