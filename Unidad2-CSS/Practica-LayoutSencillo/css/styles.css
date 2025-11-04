@@ -15,6 +15,10 @@ body {
     background-color: #4a465b;
 }
 
+.contenedor {
+    margin: 20px 100px;
+}
+
 /* Estilos del menú de navegación */
 nav {
     background-color: white;
@@ -109,7 +113,7 @@ footer > p {
     }
 
     footer {
-        clear: both;
+        clear: left;
         width: 75%;
     }
 }
