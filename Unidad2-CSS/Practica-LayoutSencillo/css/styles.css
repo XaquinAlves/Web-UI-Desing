@@ -1,6 +1,8 @@
 /* Establece fuente, box-sizing y limpia margenes y rellenos*/
 * {
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-box-align: border-box;
+    -moz-box-align: border-box;
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
@@ -9,6 +11,7 @@
 /* Estilos generales */
 p {
     line-height: 27px;
+    hyphens: auto;
 }
 
 body {
@@ -16,20 +19,29 @@ body {
 }
 
 .contenedor {
-    margin: 2% 10%;
+    margin: 2% auto;
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
 }
 
 /* Estilos del menú de navegación */
 nav {
     background-color: white;
+    width: 100%;
+    text-align: center;
 }
 
-nav li {
+nav ul {
+    width: 100%;
+}
+
+nav ul li {
     display: inline-block;
 }
 
-nav a {
-    display: block;
+nav ul li a {
+    display: inline-block;
     padding: 1em 1.5em;
     color: black;
     text-decoration: none;
@@ -44,35 +56,36 @@ nav a:hover {
 aside {
     background-color: #161f26;
     color: white;
+    padding: 5%;
 }
 
-aside a {
-    display: block;
-    color: white;
-    text-decoration: none;
+aside .widget {
+    margin-bottom: 5%;
+}
+
+aside .widget ul {
+    list-style-type: none;
+}
+
+aside .widget ul li {
     border-bottom: 0.5px solid #8f8f8f;
     padding: 5% 0%;
 }
 
-aside a:hover {
+aside .widget ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+aside .widget ul li a:hover {
     color: #8f8f8f;
 }
 
-aside h3 {
+aside .widget h3 {
     color: #ff8000;
     border-bottom: 0.5px solid #ff8000;
     margin-bottom: 5%;
 }
-
-aside ul {
-    list-style-type: none;
-}
-
-.widget {
-    margin: 0% 10% 0%; /* No encuentro una solición mejor*/
-    padding: 5% 0%;
-}
-
 
 /* Estilos del main */
 .main {
@@ -81,13 +94,17 @@ aside ul {
 
 }
 
-.posts article {
-    margin: 5% 10% 0%;
-    padding-bottom: 5%; /* No encuentro una solición mejor*/
+.main img {
+    width: 100%;
+    vertical-align: top;
 }
 
-.posts p, h2 {
-    margin-top: 5%;
+.main .posts {
+    padding: 5%;
+}
+
+.main .posts article p, h2 {
+    margin-bottom: 5%;
 }
 
 /* Estilos del footer*/
@@ -95,18 +112,17 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-}
-
-footer > p {
-    padding: 2.5%;
+    padding: 2.5% 0%;
 }
 
 /* Estilos por pantalla */
 @media (min-width: 800px) {
     aside {
-        float: right;
+        float: left;
         width: 25%;
+        padding: 3%;
     }
+
 
     .main {
         float: left;
@@ -114,8 +130,12 @@ footer > p {
     }
 
     footer {
-        clear: left;
+        clear: both;
         width: 75%;
+    }
+
+    nav {
+        text-align: left;
     }
 }
 
