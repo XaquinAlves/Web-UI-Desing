@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+}
+
+.rotar {
+    background-color: green;
+}
+
+.rotar:hover {
+    transform: rotate(360deg) scale(2, 2);
+    transition: all ease-out 1s;
+    background-color: red;
+}
+
+.mover {
+    background-color: rgba(105,105,105,0.6);
+}
+
+.mover:hover {
+    transform: translate(500px, 50px) skew(30deg, 20deg);
+    transition: all ease-in-out;
+    background-color: rgb(255,192,203);
+}
