@@ -1,0 +1,29 @@
+button {
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.btn-normal {
+    color: #fff;
+    background-color: #3498db;
+    cursor: crosshair;
+}
+
+.btn-outline {
+    border: 2px solid #3498db;
+    background: transparent;
+    color: #3498db;
+    cursor: pointer;
+}
+
+.btn-alert {
+    color: #fff;
+    background-color: #e74c3c;
+    cursor: help;
+}
+
+button:hover {
+    transform: scale(1.1,1.1);
+}
