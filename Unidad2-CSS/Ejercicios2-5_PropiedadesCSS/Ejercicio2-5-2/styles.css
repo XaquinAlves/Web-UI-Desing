@@ -18,3 +18,21 @@
 .menu li:last-child {
     border-bottom: none;
 }
+
+.menu li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    background-color: #E5F3FE;
+}
+
+.menu li a:hover {
+    background-color: #c8e2f7;
+}
+
+.menu li a::before {
+    content: "👉🏽";
+}
