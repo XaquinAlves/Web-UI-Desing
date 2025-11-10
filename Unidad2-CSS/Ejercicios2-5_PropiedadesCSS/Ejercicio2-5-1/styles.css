@@ -5,7 +5,7 @@
     padding: 0px;
 }
 
-table {
+.styled-table {
     width: 80%;
     margin-top: 20px;
     margin-left: auto;
@@ -14,29 +14,29 @@ table {
     border-collapse: collapse;
 }
 
-table caption {
+.styled-table caption {
     font-size: 20px;
     padding: 10px;
 }
 
-table td, th {
+.styled-table td, th {
     padding: 10px;
     border: 1px solid #ddd;
 }
 
-table th {
+.styled-table th {
     background-color: #009688;
     color: #fff;
 }
 
-table tbody tr:nth-child(odd) {
+.styled-table tbody tr:nth-child(odd) {
     background-color: #f2f2f2;
 }
 
-table tbody tr:hover {
+.styled-table tbody tr:hover {
     background-color: #c7e2e0;
 }
 
-table tbody tr td:nth-child(3)::after {
+.styled-table tbody tr td:nth-child(3)::after {
     content: "€";
 }

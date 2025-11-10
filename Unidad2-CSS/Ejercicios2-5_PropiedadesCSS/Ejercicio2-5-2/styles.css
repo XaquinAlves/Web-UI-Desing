@@ -2,4 +2,19 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 140px;
+    list-style-type: none;
+    border: 1px solid #FFC83D;
+}
+
+.menu li {
+    border-bottom: 1px solid #FFC83D;
+}
+
+.menu li:last-child {
+    border-bottom: none;
 }
