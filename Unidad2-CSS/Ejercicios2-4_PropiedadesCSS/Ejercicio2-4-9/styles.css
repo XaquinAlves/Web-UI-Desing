@@ -1,13 +1,17 @@
+:root {
+    --fuente: 12pt;
+}
+
 * {
     color: black;
     font-family: Courier, monospace;
-    font-size: 12pt;
-    line-height: 1.2em;
+    font-size: var(--fuente);
+    line-height: 1.2;
 }
 
 h1 {
     color: #660000;
-    font-size: 200%;
+    font-size: calc(var(--fuente)*2);
     text-shadow: 2px 2px blue;
     text-transform: capitalize;
     word-spacing: 5px;
@@ -21,9 +25,9 @@ a:link {
 
 a:visited {
     color: red;
-    font-style: normal; 
+    font-style: normal;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: underline double;
 }
 
 ul {
