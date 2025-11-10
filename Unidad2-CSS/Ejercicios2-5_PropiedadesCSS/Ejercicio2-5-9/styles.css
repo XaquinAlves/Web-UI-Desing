@@ -1,0 +1,23 @@
+#bug {
+    font-size: 100px;
+    color: brown;
+}
+
+#db {
+    font-size: 50px;
+    font-style: italic;
+}
+
+#git {
+    color: grey;
+}
+
+#rebel {
+    color: crimson;
+}
+
+button {
+    width: 100px;
+    height: auto;
+    font-size: 150px;
+}
