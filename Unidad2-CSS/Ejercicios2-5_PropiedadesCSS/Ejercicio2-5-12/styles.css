@@ -1,0 +1,42 @@
+.fondo {
+    background-image: url(./ping.jpg);
+    width: 512px;
+    height: 485px;
+}
+
+.text {
+    font-size: 4vw;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 25px;
+    width: 75%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.blend1-text {
+    color: white;
+    background-color: black;
+    mix-blend-mode: overlay;
+}
+
+.blend2-text {
+    color: red;
+    mix-blend-mode: multiply;
+}
+
+.blend3-container {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    mix-blend-mode: color-dodge;
+    opacity: 0.7;
+}
+
+.blend3-text {
+    color: white;
+
+}
