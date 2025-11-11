@@ -1,0 +1,11 @@
+.desenfoque {
+    filter: blur(3px);
+}
+
+.gris {
+    filter: grayscale(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
