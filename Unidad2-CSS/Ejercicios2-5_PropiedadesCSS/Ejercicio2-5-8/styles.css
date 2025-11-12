@@ -11,20 +11,22 @@ div {
 
 .rotar {
     background-color: green;
+    transition: transform ease-out 3s 1s, background-color ease-out 3s 1s;
 }
 
 .rotar:hover {
-    transform: rotate(360deg) scale(2, 2);
-    transition: all ease-out 1s;
+    transform: rotate(360deg) scaleX(2);
+
     background-color: red;
 }
 
 .mover {
     background-color: rgba(105,105,105,0.6);
+
 }
 
 .mover:hover {
     transform: translate(500px, 50px) skew(30deg, 20deg);
-    transition: all ease-in-out;
+    transition: transform ease-in-out 4s, background-color ease-in-out 4s;
     background-color: rgb(255,192,203);
 }
