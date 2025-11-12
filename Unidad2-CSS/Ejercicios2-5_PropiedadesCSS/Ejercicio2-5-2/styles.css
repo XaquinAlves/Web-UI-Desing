@@ -5,21 +5,21 @@
     box-sizing: border-box;
 }
 
-.menu {
+ul.menu {
     width: 140px;
     list-style-type: none;
     border: 1px solid #FFC83D;
 }
 
-.menu li {
+ul.menu li {
     border-bottom: 1px solid #FFC83D;
 }
 
-.menu li:last-child {
+ul.menu li:last-child {
     border-bottom: none;
 }
 
-.menu li a {
+ul.menu li a {
     display: block;
     width: 100%;
     text-align: center;
@@ -29,10 +29,10 @@
     background-color: #E5F3FE;
 }
 
-.menu li a:hover {
+ul.menu li a:hover {
     background-color: #c8e2f7;
 }
 
-.menu li a::before {
+ul.menu li a::before {
     content: "👉🏽";
 }
