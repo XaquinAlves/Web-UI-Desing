@@ -11,12 +11,12 @@ div {
 
 .rotar {
     background-color: green;
-    transition: transform ease-out 3s 1s, background-color ease-out 3s 1s;
+
 }
 
 .rotar:hover {
     transform: rotate(360deg) scaleX(2);
-
+    transition: transform ease-out 3s 1s, background-color ease-out 3s 1s;
     background-color: red;
 }
 
