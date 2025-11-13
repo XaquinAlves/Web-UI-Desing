@@ -1,8 +1,16 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
 .card {
     width: 300px;
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
+    line-height: 2em;
+    display: inline-block;
 }
 
 .card-shadow {
@@ -19,12 +27,29 @@
     filter: brightness(80%) contrast(120%);
 }
 
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
 .tooltip-text {
+    visibility: hidden;
     width: 120px;
     background-color: brown;
     color: white;
     text-align: center;
     padding: 5px;
     border-radius: 6px;
+    position: absolute;
+    z-index: 10;
+    top: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
 
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s;
 }
