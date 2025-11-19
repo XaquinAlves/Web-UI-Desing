@@ -20,6 +20,17 @@ body {
 }
 
 /* Estilos del header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5%;
+}
+
+header nav {
+    padding: 2%;
+}
 
 header nav a {
     display: inline-block;
@@ -30,18 +41,15 @@ header nav a {
     font-size: larger;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5%;
+header nav a:hover {
+    text-decoration: underline;
 }
 
 /* Estilos del main container(main + aside)*/
 
 .main-container {
     display: flex;
+    flex-direction: row;
     align-items: stretch;
     margin: 5%;
 }
@@ -60,6 +68,12 @@ header {
 .main-container main article .thumb {
     margin-bottom: 20px;
 }
+
+.main-container main article .thumb img {
+        width: 100%;
+        height: auto;
+}
+
 
 .main-container main article h2 {
     margin-bottom: 20px;
@@ -87,7 +101,9 @@ header {
     text-align: center;
     color: white;
     height: 25%;
+    width: auto;
 }
+
 .main-container aside .ad p {
     font-size: 32px;
     position: relative;
@@ -118,3 +134,55 @@ footer .redes-sociales {
     gap: 20px;
 }
 
+/* Media Queries para pantallas pequeñas */
+
+@media (max-width: 600px) {
+    /* Ajustes del main container (main + aside) */
+    .main-container {
+        flex-direction: column;
+    }
+
+    .main-container main,
+    .main-container aside {
+        width: 100%;
+    }
+
+    /* Ajustes del main */
+    .main-container main article .thumb {
+        max-width: 580px;
+    }
+
+    /* Ajustes del aside */
+    .main-container aside {
+        flex-direction: row;
+    }
+
+    .main-container aside .ad {
+        width: 30%;
+        height: 100px;
+    }
+
+    /* Ajustes del header y footer */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        background-color: rgba(255,255,255,.2);
+        width: 100%;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+
+    @media (max-width: 400px) {
+        .main-container aside {
+            display: none;
+        }
+    }
+}
