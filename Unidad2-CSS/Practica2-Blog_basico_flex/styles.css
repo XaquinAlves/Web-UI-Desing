@@ -6,6 +6,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    hyphens: auto;
 }
 
 .open-sans-regular {
@@ -24,20 +25,25 @@ body {
 /* Estilos del header */
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 5%;
 }
 
-header nav a {
+header .menu {
+    padding: 2%;
+    width: 20%;
+}
+
+header .menu a {
+    display: inline-block;
     text-decoration: none;
     color: white;
-    padding: 10px;
+    padding: 2%;
     font-size: larger;
 }
 
-header nav a:hover {
+header .menu a:hover {
     text-decoration: underline;
 }
 
@@ -45,7 +51,6 @@ header nav a:hover {
 
 .main-container {
     display: flex;
-    flex-direction: row;
     margin: 5%;
 }
 
@@ -60,7 +65,7 @@ header nav a:hover {
     margin: 3%;
 }
 
-.main-container main article .thumb {
+.main-container main article .thumb,.main-container main article h2,.main-container main article p {
     margin-bottom: 20px;
 }
 
@@ -68,14 +73,8 @@ header nav a:hover {
     width: 100%;
 }
 
-.main-container main article h2 {
-    margin-bottom: 20px;
+.main-container aside .ad p, .main-container main article h2 {
     font-size: 32px;
-}
-.main-container main article p {
-    margin-bottom: 20px;
-    hyphens: auto;
-    margin-right: 3%;
 }
 
 /* Estilos del aside */
@@ -91,13 +90,10 @@ header nav a:hover {
 .main-container aside .ad {
     background-color: #4264a2;
     margin: 5%;
-    text-align: center;
-    color: white;
     height: 25%;
 }
 
 .main-container aside .ad p {
-    font-size: 32px;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -107,7 +103,6 @@ header nav a:hover {
 
 footer {
     background-color: rgba(255, 255, 255, 0.2);
-    color: white;
     font-size: 18px;
     display: flex;
     justify-content: space-between;
@@ -115,7 +110,7 @@ footer {
     margin: 5%;
 }
 
-footer a {
+footer a, footer, .main-container aside .ad {
     color: white;
 }
 
@@ -123,7 +118,7 @@ footer a:hover {
     text-decoration: none;
 }
 
-footer .autor {
+footer .autor, .main-container aside .ad {
     text-align: center;
 }
 
@@ -140,8 +135,7 @@ footer .redes-sociales {
         flex-direction: column;
     }
 
-    .main-container main,
-    .main-container aside {
+    .main-container main, .main-container aside, header .menu {
         width: 100%;
     }
 
@@ -156,10 +150,13 @@ footer .redes-sociales {
     }
 
     /* Ajustes del header y footer */
-    header {
-        flex-direction: column;
+    header, footer {
         align-items: center;
         gap: 10px;
+    }
+
+    header {
+        flex-direction: column;
     }
 
     header nav {
@@ -170,8 +167,6 @@ footer .redes-sociales {
 
     footer {
         flex-direction: column-reverse;
-        align-items: center;
-        gap: 10px;
     }
 
     @media (max-width: 400px) {
