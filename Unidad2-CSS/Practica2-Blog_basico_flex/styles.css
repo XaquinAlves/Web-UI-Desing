@@ -22,43 +22,23 @@ body {
     line-height: 1.7em;
 }
 
-/* Estilos del header */
-header {
+/* Contenedores flex */
+header, .main-container, .main-container aside, footer, footer .redes-sociales {
     display: flex;
+}
+
+header, .main-container aside, footer {
     justify-content: space-between;
-    align-items: center;
+}
+
+/* Centrado de texto */
+footer .autor, .main-container aside .ad {
+    text-align: center;
+}
+
+/* Margenes */
+header, footer, .main-container, .main-container aside .ad {
     margin: 5%;
-}
-
-header .menu {
-    padding: 2%;
-    width: 20%;
-}
-
-header .menu a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding: 2%;
-    font-size: larger;
-}
-
-header .menu a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos del main container(main + aside)*/
-
-.main-container {
-    display: flex;
-    margin: 5%;
-}
-
-/* Estilos del main */
-
-.main-container main {
-    background-color: white;
-    width: 70%;
 }
 
 .main-container main article {
@@ -67,6 +47,43 @@ header .menu a:hover {
 
 .main-container main article .thumb,.main-container main article h2,.main-container main article p {
     margin-bottom: 20px;
+}
+
+/* Paddings */
+header .menu, header .menu a, footer {
+    padding: 2%;
+}
+
+/* Estilos texto */
+header .menu a, header .menu a:hover, footer a, footer, .main-container aside .ad  {
+    color: white;
+}
+header .menu a, footer a:hover  {
+    text-decoration: none;
+}
+
+/* Estilos del header */
+header {
+    align-items: center;
+}
+
+header .menu {
+    width: 20%;
+}
+
+header .menu a {
+    display: inline-block;
+    font-size: larger;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos del main */
+.main-container main {
+    background-color: white;
+    width: 70%;
 }
 
 .main-container main article .thumb img {
@@ -78,18 +95,14 @@ header .menu a:hover {
 }
 
 /* Estilos del aside */
-
 .main-container aside {
     background-color: #537dca;
     width: 30%;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .main-container aside .ad {
     background-color: #4264a2;
-    margin: 5%;
     height: 25%;
 }
 
@@ -100,38 +113,19 @@ header .menu a:hover {
 }
 
 /* Estilos del footer */
-
 footer {
     background-color: rgba(255, 255, 255, 0.2);
     font-size: 18px;
-    display: flex;
-    justify-content: space-between;
-    padding: 2%;
-    margin: 5%;
-}
-
-footer a, footer, .main-container aside .ad {
-    color: white;
-}
-
-footer a:hover {
-    text-decoration: none;
-}
-
-footer .autor, .main-container aside .ad {
-    text-align: center;
 }
 
 footer .redes-sociales {
-    display: flex;
     gap: 20px;
 }
 
 /* Media Queries para pantallas pequeñas */
-
 @media (max-width: 600px) {
     /* Ajustes del main container (main + aside) */
-    .main-container {
+    .main-container, header {
         flex-direction: column;
     }
 
@@ -155,13 +149,8 @@ footer .redes-sociales {
         gap: 10px;
     }
 
-    header {
-        flex-direction: column;
-    }
-
-    header nav {
+    header .menu {
         background-color: rgba(255, 255, 255, 0.2);
-        width: 100%;
         text-align: center;
     }
 
