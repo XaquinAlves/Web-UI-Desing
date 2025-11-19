@@ -28,6 +28,39 @@ h3 {
     font-size: 34px;
 }
 
+/* Estilos del header */
+header {
+    background-image: url(../img/bg.jpg);
+    color: white;
+}
+
+header > .contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+header .menu {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 2%;
+    margin-left: 3%;
+    gap: 20px;
+    width: 25%;
+}
+
+header .menu a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+    margin: 1%;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 .trabajos {
     background-color: #f2f2f2;
 }
@@ -36,8 +69,9 @@ h3 {
     font-size: 14px;
 }
 
-.contacto, .trabajos .trabajo .descripcion .nombre {
-    color: #3895EA;
+.contacto,
+.trabajos .trabajo .descripcion .nombre {
+    color: #3895ea;
 }
 
 .trabajos .trabajo .descripcion .categoria {
@@ -45,7 +79,7 @@ h3 {
 }
 
 .boton {
-    background-color: #3895EA;
+    background-color: #3895ea;
 }
 
 .trabajos {
@@ -61,7 +95,7 @@ h3 {
 }
 
 .acerca-de p .bold {
-    color: #3895EA;
+    color: #3895ea;
 }
 
 .redes-sociales {
