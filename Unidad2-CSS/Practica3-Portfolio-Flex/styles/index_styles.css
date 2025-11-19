@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.open-sans-regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+.trabajos .trabajo .descripcion {
+    font-size: 14px;
+}
