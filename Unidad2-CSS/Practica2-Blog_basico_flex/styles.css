@@ -72,10 +72,9 @@ header nav a:hover {
 }
 
 .main-container main article .thumb img {
-        width: 100%;
-        height: auto;
+    width: 100%;
+    height: auto;
 }
-
 
 .main-container main article h2 {
     margin-bottom: 20px;
@@ -116,14 +115,14 @@ header nav a:hover {
 /* Estilos del footer */
 
 footer {
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, 0.2);
     color: white;
     font-size: 18px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 2% 2%;
-    margin: 5%
+    margin: 5%;
 }
 
 footer a {
@@ -132,6 +131,10 @@ footer a {
 
 footer a:hover {
     text-decoration: none;
+}
+
+footer .autor {
+    text-align: center;
 }
 
 footer .redes-sociales {
@@ -175,7 +178,7 @@ footer .redes-sociales {
     }
 
     header nav {
-        background-color: rgba(255,255,255,.2);
+        background-color: rgba(255, 255, 255, 0.2);
         width: 100%;
         text-align: center;
     }
@@ -189,6 +192,12 @@ footer .redes-sociales {
     @media (max-width: 400px) {
         .main-container aside {
             display: none;
+        }
+
+        footer {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 10px;
         }
     }
 }

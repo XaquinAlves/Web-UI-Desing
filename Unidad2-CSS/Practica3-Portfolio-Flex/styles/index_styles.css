@@ -28,6 +28,42 @@ h3 {
     font-size: 34px;
 }
 
+.trabajos {
+    background-color: #f2f2f2;
+}
+
 .trabajos .trabajo .descripcion {
     font-size: 14px;
+}
+
+.contacto, .trabajos .trabajo .descripcion .nombre {
+    color: #3895EA;
+}
+
+.trabajos .trabajo .descripcion .categoria {
+    color: #636363;
+}
+
+.boton {
+    background-color: #3895EA;
+}
+
+.trabajos {
+    color: #323068;
+}
+
+.acerca-de {
+    color: #dd820d;
+}
+
+.acerca-de p {
+    color: #5a5a5a;
+}
+
+.acerca-de p .bold {
+    color: #3895EA;
+}
+
+.redes-sociales {
+    background-color: #1e2b38;
 }
