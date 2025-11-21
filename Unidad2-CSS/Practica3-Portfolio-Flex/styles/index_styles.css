@@ -34,11 +34,48 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
+/* Colores */
+.trabajos {
+    color: #323068;
+}
+
+.contacto,
+.trabajos .trabajo .descripcion .nombre {
+    color: #3895ea;
+}
+
+.trabajos .trabajo .descripcion .categoria {
+    color: #636363;
+}
+
+.boton {
+    background-color: #3895ea;
+}
+
+.redes-sociales {
+    background-color: #1e2b38;
+}
+
+.acerca-de p {
+    color: #5a5a5a;
+}
+
+.acerca-de p .bold {
+    color: #3895ea;
+}
+.trabajos {
+    background-color: #f2f2f2;
+}
+
+.acerca-de {
+    color: #dd820d;
+}
+
 /* Estilos del header */
 header {
     background-image: url(../img/bg.jpg);
     color: white;
-    height: 600px;
+    height: 500px;
 }
 
 header > .contenedor {
@@ -51,14 +88,14 @@ header .contenedor-texto {
     border: 1px solid white;
     padding: 15px;
     transform: translateY(150%);
-    padding: 1% 3%;
+    padding: 1% 5%;
 }
 
 header .menu {
     display: flex;
     align-self: flex-end;
-    margin-top: 2%;
-    margin-left: 3%;
+    margin-top: 3%;
+    margin-right: 5%;
     gap: 20px;
     width: 25%;
 }
@@ -73,25 +110,36 @@ header .menu a {
 
 header .menu a:hover {
     text-decoration: underline;
-    text-underline-offset: 2px;
+    text-underline-offset: 10px;
 }
 
+
+/* Seccion acerca de */
 div.foto{
     transform: translateY(-50%);
 }
 
 div.foto img {
-    border-radius: 100px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.3);
 }
+
+.acerca-de .texto {
+    margin: 5% 10%;
+}
+
+.acerca-de .texto .titulo, .acerca-de .texto p {
+    margin-bottom: 35px;
+}
+
+.acerca-de .texto .titulo {
+    margin-top: -10%;
+}
+
 
 /* Seccion Trabajos */
-
-.trabajos {
-    background-color: #f2f2f2;
-}
-
 .trabajos > .contenedor {
-    padding: 2.5%;
+    padding: 2.5% 5%;
 }
 
 .trabajos > .contenedor > .titulo {
@@ -115,48 +163,101 @@ div.foto img {
     font-size: 14px;
 }
 
+.trabajos .trabajo .descripcion .nombre {
+    margin-bottom: 2%;
+}
+
 .trabajo .thumb img {
     width: 250px;
     height: auto;
+    margin-bottom: 2%;
 }
 
-.contacto,
-.trabajos .trabajo .descripcion .nombre {
-    color: #3895ea;
+/* Formulario de contacto */
+footer > .contenedor {
+    margin: 5%;
+}
+footer > .contenedor > .contacto {
+    margin: 5% 10%;
 }
 
-.trabajos .trabajo .descripcion .categoria {
-    color: #636363;
+footer form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.boton {
-    background-color: #3895ea;
+.contacto > .titulo {
+    width: 100%;
+    margin-bottom: 5%;
 }
 
-.trabajos {
-    color: #323068;
+.contacto form > * {
+    font-size: larger;
 }
 
-.acerca-de {
-    color: #dd820d;
+.contacto input:required, .contacto textarea {
+    text-align: left;
+    text-indent: 2%;
+    line-height: 2em;
+    border-radius: 4px;
+    border: 1px solid grey;
 }
 
-.acerca-de .texto {
-    margin: 3%;
+.contacto input:focus {
+    border: 1px solid black;
 }
 
-.acerca-de .texto .titulo, .acerca-de .texto p {
-    margin-bottom: 35px;
+.contacto input:required {
+    width: 48%;
+    height: 40px;
 }
 
-.acerca-de p {
-    color: #5a5a5a;
+.contacto textarea {
+    width: 100%;
+    height: 80px;
 }
 
-.acerca-de p .bold {
-    color: #3895ea;
+.contacto .boton {
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.redes-sociales {
-    background-color: #1e2b38;
+.contacto .boton:hover {
+    background-color: #387bea;
+}
+
+/* Estilos de las RR.SS. */
+.redes-sociales a {
+    display: inline-block;
+    color: white;
+    font-size: 30px;
+    margin:  30px 25px;
+    padding: 15px 25px;
+    border-radius: 4px;
+}
+
+.redes-sociales .twitter:hover {
+    background-color: #1da1f2;
+}
+
+.redes-sociales .facebook:hover {
+    background-color: #1877f2;
+}
+
+.redes-sociales .youtube:hover {
+    background-color: #ff0000;
+}
+
+.redes-sociales .github:hover {
+    background-color: #333;
+}
+
+.redes-sociales .instagram:hover {
+    background-color: #405de6;
 }
