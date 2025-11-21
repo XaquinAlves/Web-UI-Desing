@@ -71,16 +71,59 @@ h1, h2, h3 {
     color: #dd820d;
 }
 
-/* Estilos del header */
-header {
-    background-image: url(../img/bg.jpg);
+.contacto .boton:hover {
+    background-color: #387bea;
+}
+
+
+.redes-sociales .twitter:hover {
+    background-color: #1da1f2;
+}
+
+.redes-sociales .facebook:hover {
+    background-color: #1877f2;
+}
+
+.redes-sociales .youtube:hover {
+    background-color: #ff0000;
+}
+
+.redes-sociales .github:hover {
+    background-color: #333;
+}
+
+.redes-sociales .instagram:hover {
+    background-color: #405de6;
+}
+
+header, header .menu a {
     color: white;
-    height: 500px;
+}
+
+/* Contenedores flex */
+
+header > .contenedor, header .menu, .contenedor-trabajos, footer form {
+    display: flex;
+}
+
+.contenedor-trabajos, footer form {
+    flex-flow: row wrap;
 }
 
 header > .contenedor {
-    display: flex;
     flex-direction: column;
+}
+
+/* */
+
+header .menu a, .redes-sociales a {
+    display: inline-block;
+}
+
+/* Estilos del header */
+header {
+    background-image: url(../img/bg.jpg);
+    height: 500px;
 }
 
 header .contenedor-texto {
@@ -92,7 +135,6 @@ header .contenedor-texto {
 }
 
 header .menu {
-    display: flex;
     align-self: flex-end;
     margin-top: 3%;
     margin-right: 5%;
@@ -101,8 +143,6 @@ header .menu {
 }
 
 header .menu a {
-    display: inline-block;
-    color: white;
     text-decoration: none;
     padding: 1%;
     margin: 1%;
@@ -112,7 +152,6 @@ header .menu a:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
 }
-
 
 /* Seccion acerca de */
 div.foto{
@@ -124,11 +163,11 @@ div.foto img {
     border: 5px solid rgba(255, 255, 255, 0.3);
 }
 
-.acerca-de .texto {
+footer > .contenedor, footer > .contenedor > .contacto, .acerca-de .texto {
     margin: 5% 10%;
 }
 
-.acerca-de .texto .titulo, .acerca-de .texto p {
+.acerca-de .texto * {
     margin-bottom: 35px;
 }
 
@@ -148,10 +187,7 @@ div.foto img {
 }
 
 .trabajos .contenedor-trabajos {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
 }
 
 .trabajos .trabajo {
@@ -174,16 +210,9 @@ div.foto img {
 }
 
 /* Formulario de contacto */
-footer > .contenedor {
-    margin: 5%;
-}
-footer > .contenedor > .contacto {
-    margin: 5% 10%;
-}
+
 
 footer form {
-    display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
     gap: 20px;
 }
@@ -215,7 +244,7 @@ footer form {
 }
 
 .contacto textarea {
-    width: 100%;
+    width: 110%;
     height: 80px;
 }
 
@@ -228,36 +257,12 @@ footer form {
     margin-right: auto;
 }
 
-.contacto .boton:hover {
-    background-color: #387bea;
-}
 
 /* Estilos de las RR.SS. */
 .redes-sociales a {
-    display: inline-block;
     color: white;
     font-size: 30px;
     margin:  30px 25px;
     padding: 15px 25px;
     border-radius: 4px;
-}
-
-.redes-sociales .twitter:hover {
-    background-color: #1da1f2;
-}
-
-.redes-sociales .facebook:hover {
-    background-color: #1877f2;
-}
-
-.redes-sociales .youtube:hover {
-    background-color: #ff0000;
-}
-
-.redes-sociales .github:hover {
-    background-color: #333;
-}
-
-.redes-sociales .instagram:hover {
-    background-color: #405de6;
 }
