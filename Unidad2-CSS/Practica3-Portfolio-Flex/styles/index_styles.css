@@ -103,7 +103,6 @@ header .menu a,
 }
 
 /* Contenedores flex */
-
 header > .contenedor,
 header .menu,
 .contenedor-trabajos,
@@ -130,8 +129,7 @@ header .menu {
     justify-content: end;
 }
 
-/* Margenes comunes */
-
+/* Margenes y paddings comunes */
 header .menu a,
 .redes-sociales a {
     display: inline-block;
@@ -148,8 +146,14 @@ footer > .contenedor > .contacto,
 .trabajos .trabajo,
 .contacto input:required,
 .contacto textarea,
-.acerca-de .texto > * {
-    margin-bottom: 2%;
+.acerca-de .texto > *,
+.trabajos > .contenedor > .titulo {
+    margin-bottom: 3%;
+}
+
+.trabajos > .contenedor,
+header .contenedor-texto {
+    padding: 1% 5%;
 }
 
 /* Tamaños comunes */
@@ -159,6 +163,7 @@ header .menu,
 .contacto textarea {
     width: 100%;
 }
+
 /* Estilos del header */
 header {
     background-image: url(../img/bg.jpg);
@@ -169,7 +174,6 @@ header {
 header .contenedor-texto {
     border: 1px solid white;
     align-self: center;
-    padding: 1% 5%;
     position: absolute;
     top: 40%;
 }
@@ -200,15 +204,6 @@ div.foto img {
 }
 
 /* Seccion Trabajos */
-.trabajos > .contenedor {
-    padding: 2.5% 5%;
-}
-
-.trabajos > .contenedor > .titulo {
-    font-weight: 400;
-    margin-bottom: 40px;
-}
-
 .trabajos .trabajo {
     width: 23%;
 }
@@ -227,7 +222,6 @@ div.foto img {
     text-align: left;
     text-indent: 2%;
     line-height: 2em;
-    border-radius: 4px;
     border: 1px solid grey;
 }
 
@@ -237,16 +231,9 @@ div.foto img {
 
 .contacto input:required {
     width: 47%;
-    height: 40px;
-}
-
-.contacto textarea {
-    height: 80px;
 }
 
 .contacto .boton {
-    border-radius: 4px;
-    padding: 10px 20px;
     border: none;
     margin-left: auto;
     margin-right: auto;
@@ -256,14 +243,23 @@ div.foto img {
 .redes-sociales a {
     font-size: 30px;
     margin: 30px 10px;
+}
+
+.redes-sociales a,
+.contacto .boton {
     padding: 15px 25px;
+}
+
+.redes-sociales a,
+.contacto .boton,
+.contacto input:required,
+.contacto textarea {
     border-radius: 4px;
 }
 
 @media (max-width: 800px) {
     header .menu {
         justify-content: center;
-        margin-bottom: 5%;
     }
 
     .trabajos .trabajo {
@@ -289,16 +285,13 @@ div.foto img {
             font-size: 33px;
         }
 
-        h2 {
+        h2,
+        .trabajos .trabajo .descripcion {
             font-size: 14px;
         }
 
         h3 {
             font-size: 32px;
-        }
-
-        .trabajos .trabajo .descripcion {
-            font-size: 14px;
         }
     }
 }
