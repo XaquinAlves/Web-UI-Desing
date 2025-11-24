@@ -17,7 +17,7 @@
     font-variation-settings: "wdth" 100;
 }
 
-/* Titulos */
+/* Tamaño de letra */
 h1 {
     font-size: 35px;
 }
@@ -120,7 +120,17 @@ header > .contenedor {
     flex-direction: column;
 }
 
-/* Otros estilos generales*/
+.trabajos .contenedor-trabajos,
+footer form {
+    justify-content: space-between;
+}
+
+header .menu {
+    align-self: flex-end;
+    justify-content: end;
+}
+
+/* Margenes comunes */
 
 header .menu a,
 .redes-sociales a {
@@ -133,6 +143,22 @@ footer > .contenedor > .contacto,
     margin: 5% 10%;
 }
 
+.trabajos .trabajo .descripcion .nombre,
+.trabajo .thumb img,
+.trabajos .trabajo,
+.contacto input:required,
+.contacto textarea,
+.acerca-de .texto > * {
+    margin-bottom: 2%;
+}
+
+/* Tamaños comunes */
+header .menu,
+.trabajos .trabajo img,
+.contacto > .titulo,
+.contacto textarea {
+    width: 100%;
+}
 /* Estilos del header */
 header {
     background-image: url(../img/bg.jpg);
@@ -146,13 +172,6 @@ header .contenedor-texto {
     padding: 1% 5%;
     position: absolute;
     top: 40%;
-}
-
-header .menu {
-    align-self: flex-end;
-    width: 100%;
-    display: flex;
-    justify-content: end;
 }
 
 header .menu a {
@@ -176,10 +195,6 @@ div.foto img {
     border: 5px solid rgba(255, 255, 255, 0.3);
 }
 
-.acerca-de .texto * {
-    margin-bottom: 35px;
-}
-
 .acerca-de .texto .titulo {
     margin-top: -10%;
 }
@@ -194,39 +209,12 @@ div.foto img {
     margin-bottom: 40px;
 }
 
-.trabajos .contenedor-trabajos {
-    justify-content: space-between;
-}
-
 .trabajos .trabajo {
     width: 23%;
-    margin-bottom: 20px;
-    margin-right: 2%;
-    flex-shrink: 2;
-}
-
-.trabajos .trabajo .descripcion {
-    font-size: 14px;
-}
-
-.trabajos .trabajo .descripcion .nombre {
-    margin-bottom: 2%;
-}
-
-.trabajo .thumb img {
-    width: 250px;
-    height: auto;
-    margin-bottom: 2%;
 }
 
 /* Formulario de contacto */
-
-footer form {
-    justify-content: space-between;
-}
-
 .contacto > .titulo {
-    width: 100%;
     margin-bottom: 5%;
 }
 
@@ -241,7 +229,6 @@ footer form {
     line-height: 2em;
     border-radius: 4px;
     border: 1px solid grey;
-    margin-bottom: 15px;
 }
 
 .contacto input:focus {
@@ -254,7 +241,6 @@ footer form {
 }
 
 .contacto textarea {
-    width: 100%;
     height: 80px;
 }
 
@@ -267,19 +253,11 @@ footer form {
 }
 
 /* Estilos de las RR.SS. */
-.redes-sociales {
-    justify-content: center;
-}
-
 .redes-sociales a {
     font-size: 30px;
     margin: 30px 10px;
     padding: 15px 25px;
     border-radius: 4px;
-}
-
-.trabajos .trabajo img {
-    width: 100%;
 }
 
 @media (max-width: 800px) {
@@ -317,6 +295,10 @@ footer form {
 
         h3 {
             font-size: 32px;
+        }
+
+        .trabajos .trabajo .descripcion {
+            font-size: 14px;
         }
     }
 }
