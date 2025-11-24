@@ -30,7 +30,9 @@ h3 {
     font-size: 34px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 400;
 }
 
@@ -40,16 +42,17 @@ h1, h2, h3 {
 }
 
 .contacto,
-.trabajos .trabajo .descripcion .nombre {
+.trabajos .trabajo .descripcion .nombre,
+.acerca-de p .bold {
     color: #3895ea;
-}
-
-.trabajos .trabajo .descripcion .categoria {
-    color: #636363;
 }
 
 .boton {
     background-color: #3895ea;
+}
+
+.trabajos .trabajo .descripcion .categoria {
+    color: #636363;
 }
 
 .redes-sociales {
@@ -60,9 +63,6 @@ h1, h2, h3 {
     color: #5a5a5a;
 }
 
-.acerca-de p .bold {
-    color: #3895ea;
-}
 .trabajos {
     background-color: #f2f2f2;
 }
@@ -74,7 +74,6 @@ h1, h2, h3 {
 .contacto .boton:hover {
     background-color: #387bea;
 }
-
 
 .redes-sociales .twitter:hover {
     background-color: #1da1f2;
@@ -96,17 +95,24 @@ h1, h2, h3 {
     background-color: #405de6;
 }
 
-header, header .menu a {
+header,
+header .menu a,
+.redes-sociales a,
+.contacto .boton {
     color: white;
 }
 
 /* Contenedores flex */
 
-header > .contenedor, header .menu, .contenedor-trabajos, footer form {
+header > .contenedor,
+header .menu,
+.contenedor-trabajos,
+footer form {
     display: flex;
 }
 
-.contenedor-trabajos, footer form {
+.contenedor-trabajos,
+footer form {
     flex-flow: row wrap;
 }
 
@@ -114,38 +120,45 @@ header > .contenedor {
     flex-direction: column;
 }
 
-/* */
+/* Otros estilos generales*/
 
-header .menu a, .redes-sociales a {
+header .menu a,
+.redes-sociales a {
     display: inline-block;
+}
+
+footer > .contenedor,
+footer > .contenedor > .contacto,
+.acerca-de .texto {
+    margin: 5% 10%;
 }
 
 /* Estilos del header */
 header {
     background-image: url(../img/bg.jpg);
-    height: 500px;
+    height: 450px;
+    position: relative;
 }
 
 header .contenedor-texto {
-    align-self: center;
     border: 1px solid white;
-    padding: 15px;
-    transform: translateY(150%);
+    align-self: center;
     padding: 1% 5%;
+    position: absolute;
+    top: 40%;
 }
 
 header .menu {
     align-self: flex-end;
-    margin-top: 3%;
-    margin-right: 5%;
-    gap: 20px;
-    width: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 header .menu a {
     text-decoration: none;
     padding: 1%;
-    margin: 1%;
+    margin: 2%;
 }
 
 header .menu a:hover {
@@ -154,17 +167,13 @@ header .menu a:hover {
 }
 
 /* Seccion acerca de */
-div.foto{
+div.foto {
     transform: translateY(-50%);
 }
 
 div.foto img {
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.3);
-}
-
-footer > .contenedor, footer > .contenedor > .contacto, .acerca-de .texto {
-    margin: 5% 10%;
 }
 
 .acerca-de .texto * {
@@ -174,7 +183,6 @@ footer > .contenedor, footer > .contenedor > .contacto, .acerca-de .texto {
 .acerca-de .texto .titulo {
     margin-top: -10%;
 }
-
 
 /* Seccion Trabajos */
 .trabajos > .contenedor {
@@ -187,12 +195,14 @@ footer > .contenedor, footer > .contenedor > .contacto, .acerca-de .texto {
 }
 
 .trabajos .contenedor-trabajos {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .trabajos .trabajo {
     width: 23%;
     margin-bottom: 20px;
+    margin-right: 2%;
+    flex-shrink: 2;
 }
 
 .trabajos .trabajo .descripcion {
@@ -211,10 +221,8 @@ footer > .contenedor, footer > .contenedor > .contacto, .acerca-de .texto {
 
 /* Formulario de contacto */
 
-
 footer form {
     justify-content: space-between;
-    gap: 20px;
 }
 
 .contacto > .titulo {
@@ -226,12 +234,14 @@ footer form {
     font-size: larger;
 }
 
-.contacto input:required, .contacto textarea {
+.contacto input:required,
+.contacto textarea {
     text-align: left;
     text-indent: 2%;
     line-height: 2em;
     border-radius: 4px;
     border: 1px solid grey;
+    margin-bottom: 15px;
 }
 
 .contacto input:focus {
@@ -239,12 +249,12 @@ footer form {
 }
 
 .contacto input:required {
-    width: 48%;
+    width: 47%;
     height: 40px;
 }
 
 .contacto textarea {
-    width: 110%;
+    width: 100%;
     height: 80px;
 }
 
@@ -252,17 +262,61 @@ footer form {
     border-radius: 4px;
     padding: 10px 20px;
     border: none;
-    color: white;
     margin-left: auto;
     margin-right: auto;
 }
 
-
 /* Estilos de las RR.SS. */
+.redes-sociales {
+    justify-content: center;
+}
+
 .redes-sociales a {
-    color: white;
     font-size: 30px;
-    margin:  30px 25px;
+    margin: 30px 10px;
     padding: 15px 25px;
     border-radius: 4px;
+}
+
+.trabajos .trabajo img {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    header .menu {
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+
+    .trabajos .trabajo {
+        width: 46%;
+    }
+
+    header {
+        height: 300px;
+    }
+
+    @media (max-width: 500px) {
+        .redes-sociales a {
+            margin: 5%;
+            padding: 2.5% 5%;
+        }
+
+        header .menu {
+            justify-content: center;
+            margin-bottom: 15%;
+        }
+
+        h1 {
+            font-size: 33px;
+        }
+
+        h2 {
+            font-size: 14px;
+        }
+
+        h3 {
+            font-size: 32px;
+        }
+    }
 }
