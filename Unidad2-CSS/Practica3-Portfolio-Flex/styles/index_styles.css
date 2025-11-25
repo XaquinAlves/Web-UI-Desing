@@ -36,6 +36,7 @@ h3 {
     font-weight: 400;
 }
 
+
 /* Colores */
 .trabajos {
     color: #323068;
@@ -186,26 +187,28 @@ header .menu a {
 
 header .menu a:hover {
     text-decoration: underline;
-    text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 15px;
 }
 
 /* Seccion acerca de */
-div.foto {
-    transform: translateY(-50%);
-}
-
 div.foto img {
+    transform: translateY(-50%);
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.3);
 }
 
 .acerca-de .texto .titulo {
-    margin-top: -10%;
+    margin-top: -8%;
 }
 
 /* Seccion Trabajos */
 .trabajos .trabajo {
     width: 23%;
+}
+
+.trabajos .trabajo .descripcion .nombre {
+    font-weight: bolder;
 }
 
 /* Formulario de contacto */
@@ -230,7 +233,7 @@ div.foto img {
 }
 
 .contacto input:required {
-    width: 47%;
+    width: 49%;
 }
 
 .contacto .boton {
