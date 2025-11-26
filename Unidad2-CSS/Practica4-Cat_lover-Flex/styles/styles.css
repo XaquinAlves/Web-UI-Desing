@@ -57,7 +57,7 @@ header nav ul.menu li, header nav ul.menu a, footer .footer-copy a {
     display: inline-block;
 }
 
-footer .footer-menu, footer .footer-copy, footer .footer-copy a, header .logo {
+footer .footer-menu, footer .footer-copy, footer .footer-copy a {
     padding: 2.5%
 }
 
@@ -158,6 +158,9 @@ footer .footer-copy {
         }
 
 @media (max-width: 600px) {
+    header .logo {
+        padding: 2.5%
+    }
     header nav, header .search input {
         display: none;
     }
