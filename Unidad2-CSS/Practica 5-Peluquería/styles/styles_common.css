@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap);
+
+:root {
+    --primary-text-color: #333;
+    --bg-strong-pink: #e91e63;
+    --hover-pink: #d81b60;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    color: var(--primary-text-color);
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+    header h1 {
+        font-weight: bold;
+    }
+    header p {
+        color: #555;
+        margin-top: -1%;
+        margin-bottom: 2%;
+    }
+
+nav {
+    background-color: var(--bg-strong-pink);
+    display: flex;
+    justify-content: center;
+    position: sticky;
+}
+    nav ul li {
+        display: inline-block;
+    }
+    nav ul li a {
+        display: inline-block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        color: black;
+    }
+
+section#inicio img {
+    border-radius: 8px;
+}
