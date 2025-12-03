@@ -71,8 +71,16 @@ section#inicio {
 section.crd-section{
     border-radius: 8px;
     box-shadow: 1px 1px 2px 0.5px lightgrey;
-    padding: 2%;
+    padding: 2.5%;
     margin: 5%;
+}
+section.crd-section .crd-header h2 {
+    color: var(--bg-strong-pink);
+    margin-bottom: 1%;
+}
+section.crd-section .crd-header p {
+    color: var(--secondary-text-color);
+    line-height: 1.6em;
 }
 
 section#reservas {
@@ -85,14 +93,6 @@ section#reservas {
     section#reservas .crd-header {
         grid-column-end: span 2;
     }
-    section#reservas h2 {
-        color: var(--bg-strong-pink);
-        margin-bottom: 1%;
-    }
-        section#reservas .crd-header p {
-            color: var(--secondary-text-color);
-            line-height: 1.6em;
-        }
     section#reservas .img-container img {
         width: 100%;
         height: 100%;
@@ -110,6 +110,9 @@ section#reservas {
         }
             section#reservas .crd-form form * {
                 margin-bottom: 3.5%;
+            }
+            section#reservas .crd-form form h2 {
+                color: var(--bg-strong-pink);
             }
             section#reservas .crd-form form input, section#reservas .crd-form form textarea {
                 border: 1px solid lightgray;
@@ -130,3 +133,21 @@ section#reservas {
                 background-color: var(--hover-pink);
             }
 
+section#servicios {
+    display: grid;
+    row-gap: 5%;
+    padding-bottom: 5%;
+}
+    section#servicios table, section#servicios table td, section#servicios table th{
+        border: 1px solid lightgray;
+        border-collapse: collapse;
+        line-height: 2em;
+        text-align: center;
+    }
+        section#servicios table th {
+            background-color: var(--bg-strong-pink);
+            color: white;
+        }
+        section#servicios table th, section#servicios table td {
+            padding: 1%;
+        }
