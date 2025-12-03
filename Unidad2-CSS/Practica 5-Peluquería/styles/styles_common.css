@@ -120,6 +120,9 @@ section#reservas {
                 line-height: 2em;
                 text-indent: 2%;
             }
+            section#reservas .crd-form form input:focus, section#reservas .crd-form form textarea:focus {
+                border: 1px solid var(--bg-strong-pink);
+            }
             section#reservas .crd-form form button {
                 background-color: var(--bg-strong-pink);
                 color: white;
@@ -139,7 +142,7 @@ section#servicios {
     padding-bottom: 5%;
 }
     section#servicios table, section#servicios table td, section#servicios table th{
-        border: 1px solid lightgray;
+        border: 1px solid grey;
         border-collapse: collapse;
         line-height: 2em;
         text-align: center;
@@ -150,4 +153,7 @@ section#servicios {
         }
         section#servicios table th, section#servicios table td {
             padding: 1%;
+        }
+        section#servicios table tr:nth-child(even) {
+            background-color: #EEE;
         }
