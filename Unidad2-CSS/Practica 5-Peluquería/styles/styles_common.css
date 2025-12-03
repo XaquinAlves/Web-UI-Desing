@@ -68,12 +68,26 @@ section#inicio {
         margin-right: auto;
     }
 
-section.crd-section{
+div.parallax, section.crd-section {
     border-radius: 8px;
-    box-shadow: 1px 1px 2px 0.5px lightgrey;
     padding: 2.5%;
     margin: 5%;
 }
+
+div.parallax {
+    background-image: url(https://cdn.pixabay.com/photo/2021/11/15/12/06/barber-shop-6797941_1280.jpg);
+    min-height: 300px;
+    height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.crd-section{
+    box-shadow: 1px 1px 2px 0.5px lightgrey;
+}
+
 section.crd-section .crd-header h2 {
     color: var(--bg-strong-pink);
     margin-bottom: 1%;
@@ -157,3 +171,4 @@ section#servicios {
         section#servicios table tr:nth-child(even) {
             background-color: #EEE;
         }
+

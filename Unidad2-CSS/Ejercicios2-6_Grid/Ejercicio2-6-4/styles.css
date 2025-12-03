@@ -24,20 +24,9 @@
 }
 
 #header {
-    grid-area: header;
+    grid-area: lista1;
 }
-#lista2 {
-    grid-area: lista2;
-}
-#lista3 {
-    grid-area: lista3;
-}
-#lista4 {
-    grid-area: lista4;
-}
-#lista5 {
-    grid-area: lista5;
-}
+
 
 .item {
     background-color: #5a5c5c;
@@ -68,10 +57,7 @@
 }
 
 .internal {
-    grid-template-areas:
-        "header header"
-        "lista2 lista3"
-        "lista4 lista5";
+    grid-template: ' lista1 lista1 ' auto;
     background-color: white;
     margin: 2%;
 }
