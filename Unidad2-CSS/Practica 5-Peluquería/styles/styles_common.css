@@ -4,6 +4,7 @@
     --primary-text-color: #333;
     --bg-strong-pink: #e91e63;
     --hover-pink: #d81b60;
+    --secondary-text-color: #555;
 }
 
 * {
@@ -28,9 +29,10 @@ header {
 }
     header h1 {
         font-weight: bold;
+        font-size: 42px;
     }
     header p {
-        color: #555;
+        color: var(--secondary-text-color);
         margin-top: -1%;
         margin-bottom: 2%;
     }
@@ -47,6 +49,8 @@ nav {
     nav ul li a {
         display: inline-block;
         padding: 15px;
+        font-size: 20px;
+        font-weight: bold;
         color: white;
         text-decoration: none;
     }
@@ -54,6 +58,75 @@ nav {
         color: black;
     }
 
-section#inicio img {
-    border-radius: 8px;
+section#inicio {
+    margin: 2.5% 5%;
 }
+    section#inicio img {
+        border-radius: 8px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+section.crd-section{
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px 0.5px lightgrey;
+    padding: 2%;
+    margin: 5%;
+}
+
+section#reservas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    row-gap: 5%;
+    column-gap: 5%;
+}
+    section#reservas .crd-header {
+        grid-column-end: span 2;
+    }
+    section#reservas h2 {
+        color: var(--bg-strong-pink);
+        margin-bottom: 1%;
+    }
+        section#reservas .crd-header p {
+            color: var(--secondary-text-color);
+            line-height: 1.6em;
+        }
+    section#reservas .img-container img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+    }
+    section#reservas .crd-form {
+        background-color: rgba(240,240,240,0.95);
+        border-radius: 8px;
+    }
+        section#reservas .crd-form form {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 5%;
+        }
+            section#reservas .crd-form form * {
+                margin-bottom: 3.5%;
+            }
+            section#reservas .crd-form form input, section#reservas .crd-form form textarea {
+                border: 1px solid lightgray;
+                border-radius: 4px;
+                line-height: 2em;
+                text-indent: 2%;
+            }
+            section#reservas .crd-form form button {
+                background-color: var(--bg-strong-pink);
+                color: white;
+                border: none;
+                border-radius: 4px;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 2.5%;
+            }
+            section#reservas .crd-form form button:hover {
+                background-color: var(--hover-pink);
+            }
+
