@@ -262,6 +262,15 @@ footer {
 
 @media (max-width: 768px) {
     section#reservas {
-        grid-template-columns: 1fr;
+        height: 250vh;
+        row-gap: 1%;
+        grid-template-rows: 0.25fr 0.45fr 1fr;
+    }
+    section#reservas .img-container, section#reservas .crd-form {
+        grid-column-end: span 2;
+        margin-bottom: 0%;
+    }
+    section#reservas .img-container {
+
     }
 }
