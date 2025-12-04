@@ -91,7 +91,7 @@ div.parallax {
 }
 
 section.crd-section{
-    box-shadow: 3px 3px 5px 5px lightgrey;
+    box-shadow: 1px 1px 2px 2px lightgrey;
 }
 
 section.crd-section .crd-header h2, section#reservas .crd-form form h2 {
@@ -165,8 +165,11 @@ section#servicios {
     row-gap: 5%;
     padding-bottom: 5%;
 }
+    section#servicios table {
+        box-shadow: 0.5px 0.5px 3px 1px rgba(200,200,200, 0.95);
+    }
     section#servicios table, section#servicios table td, section#servicios table th{
-        border: 1px solid grey;
+        border: 1px solid rgba(200,200,200, 0.95);
         border-collapse: collapse;
         line-height: 2em;
         text-align: center;
@@ -221,7 +224,8 @@ section#ventajas .crd-body .crd-ventajas {
     padding: 1%;
     margin: 1.66%;
     border-radius: 8px;
-    border: 1px solid var(--bg-strong-pink);
+    border: 1px solid rgba(233,30,99, 0.3);
+    box-shadow: 1px 1px 3px 0.5px rgba(200,200,200, 0.95);
     hyphens: auto;
 }
     section#ventajas .crd-body .crd-ventajas h3 {
