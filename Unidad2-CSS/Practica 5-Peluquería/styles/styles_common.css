@@ -23,6 +23,12 @@ body {
     color: var(--primary-text-color);
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
 header {
     background-color: rgba(255, 255, 255, 0.95);
     border-bottom: 2px solid black;
@@ -59,7 +65,7 @@ nav {
     }
 
 section#inicio {
-    margin: 2.5% 5%;
+    margin: 3% 5%;
 }
     section#inicio img {
         border-radius: 8px;
@@ -71,7 +77,7 @@ section#inicio {
 div.parallax, section.crd-section {
     border-radius: 8px;
     padding: 2.5%;
-    margin: 5%;
+    margin: 2% 5%;
 }
 
 div.parallax {
@@ -108,28 +114,27 @@ section#reservas {
     row-gap: 5%;
     column-gap: 5%;
     object-fit: cover;
-    padding-bottom: 0%;
+    padding-bottom: 1%;
 }
     section#reservas .crd-header {
         grid-column-end: span 2;
     }
     section#reservas .img-container img {
         width: 100%;
-        height: 90%;
+        height: 95%;
         object-fit: cover;
         border-radius: 4px;
     }
     section#reservas .crd-form {
         background-color: rgba(240,240,240,0.95);
         border-radius: 8px;
-        height: 90%;
-        overflow: auto;
+        height: 95%;
     }
         section#reservas .crd-form form {
             display: flex;
             flex-direction: column;
             text-align: center;
-            padding: 5%;
+            padding: 3%;
         }
             section#reservas .crd-form form * {
                 margin-bottom: 3.5%;
@@ -176,7 +181,10 @@ section#servicios {
         section#servicios table tr:nth-child(even) {
             background-color: #EEE;
         }
-
+section#galeria {
+    display: flex;
+    flex-direction: column;
+}
 section#galeria .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -202,40 +210,36 @@ section#mapa iframe {
     height: 50vh;
 }
 
-section#ventajas {
-    height: 40vh;
-}
-    section#ventajas .crd-header {
+section#ventajas .crd-header {
         text-align: center;
+}
+section#ventajas .crd-body .crd-ventajas {
+    background-color: #FFE3EF;
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding: 1%;
+    margin: 1.66%;
+    border-radius: 8px;
+    border: 1px solid var(--bg-strong-pink);
+    hyphens: auto;
+}
+    section#ventajas .crd-body .crd-ventajas h3 {
+        color: var(--bg-strong-pink);
+        margin-bottom: 1%;
+        font-size: 1.3em;
     }
-    section#ventajas .crd-body {
-        height: 70%;
+    section#ventajas .crd-body .crd-ventajas p {
+        color: var(--secondary-text-color);
     }
-    section#ventajas .crd-body .crd-ventajas {
-        background-color: #FFE3EF;
-        float: left;
-        width: 30%;
-        height: 100%;
-        padding: 1%;
-        margin: 1.66%;
-        border-radius: 8px;
-        border: 1px solid var(--bg-strong-pink);
-        overflow: auto;
-        hyphens: auto;
-    }
-        section#ventajas .crd-body .crd-ventajas h3 {
-            color: var(--bg-strong-pink);
-            margin-bottom: 1%;
-            font-size: 1.3em;
-        }
-        section#ventajas .crd-body .crd-ventajas p {
-            color: var(--secondary-text-color);
-        }
 
 footer {
     background-color: rgba(0, 0, 0, 0.85);
     border-top: 2px solid var(--bg-strong-pink);
     padding: 1%;
+    clear: left;
+    display: grid;
+    justify-items: center;
 }
     footer p {
         color: white;
@@ -244,12 +248,8 @@ footer {
     }
     footer .social-media {
         color: var(--bg-strong-pink);
-        width: 25%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        gap: 25%;
     }
         footer .social-media i {
             font-size: 2.5em;
@@ -261,16 +261,30 @@ footer {
         }
 
 @media (max-width: 768px) {
-    section#reservas {
-        height: 250vh;
-        row-gap: 1%;
-        grid-template-rows: 0.25fr 0.45fr 1fr;
+    body p {
+        font-size: 1em;
     }
-    section#reservas .img-container, section#reservas .crd-form {
-        grid-column-end: span 2;
-        margin-bottom: 0%;
-    }
-    section#reservas .img-container {
 
+    section#reservas .crd-header {
+        grid-column-end: span 1;
+    }
+    section#reservas {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.25fr 1fr 1fr;
+    }
+    section#galeria .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0.5%;
+        padding-bottom: 10%;
+    }
+    section#galeria .gallery .img-container:nth-last-child(-n+4) {
+        display: none;
+    }
+
+    section#ventajas .crd-body .crd-ventajas {
+        clear: left;
+        width: 95%;
+        padding: 4%
     }
 }
