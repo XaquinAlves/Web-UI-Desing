@@ -155,9 +155,11 @@ section#reservas {
                 border-radius: 4px;
                 font-weight: bold;
                 padding: 2.5%;
+                transition: transform 0.25s ease-in-out;
             }
             section#reservas .crd-form form button:hover {
                 background-color: var(--hover-pink);
+                transform: scale(1.02, 1.1);
             }
 
 section#servicios {
@@ -253,6 +255,7 @@ footer {
     footer .social-media {
         color: var(--bg-strong-pink);
         display: flex;
+        justify-content: center;
         gap: 25%;
     }
         footer .social-media i {
