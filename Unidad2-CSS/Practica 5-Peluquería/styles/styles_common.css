@@ -48,13 +48,21 @@ nav {
     display: flex;
     justify-content: center;
     position: sticky;
+    top: 0%;
 }
+    nav ul {
+        display: flex;
+        width: 100%;
+        align-items: baseline;
+        justify-content: center;
+        gap: 2.5%
+    }
     nav ul li {
         display: inline-block;
     }
     nav ul li a {
         display: inline-block;
-        padding: 20px;
+        padding: 15% 20%;
         font-size: 1.2em;
         font-weight: bold;
         color: white;
@@ -113,7 +121,7 @@ section#reservas {
     grid-template-rows: 0.25fr 1fr;
     column-gap: 5%;
     object-fit: cover;
-    padding-bottom: 1%;
+    padding-bottom: 3%;
 }
     section#reservas .crd-header {
         grid-column-end: span 2;
@@ -294,5 +302,8 @@ footer {
         clear: left;
         width: 95%;
         padding: 4%
+    }
+    nav ul li a {
+        font-size: 16px;
     }
 }
