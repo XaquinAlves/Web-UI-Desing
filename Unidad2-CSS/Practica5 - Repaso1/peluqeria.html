@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Peluquería Glamour</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="texto-header">
+                <h1>Peluquería Glamour</h1>
+                <p>Tu estilo, nuestro arte. Descubre una nueva imagen.</p>
+            </div>
+        </header>
+        <nav>
+                <div class="nav-link"><a href="#">Inicio</a></div>
+                <div class="nav-link"><a href="#">Servicios</a></div>
+                <div class="nav-link"><a href="#">Galería</a></div>
+                <div class="nav-link"><a href="#">Reservas</a></div>
+        </nav>
+        <main>
+            <section>
+                <img
+                    src="https://cdn.pixabay.com/photo/2019/03/08/20/17/beauty-salon-4043096_1280.jpg"
+                    alt="imagen_completa"
+                />
+            </section>
+            <section class="section-crd bienvenida">
+                <div class="crd-header">
+                    <h2>Bienvenida</h2>
+                    <p>
+                        En Peluquería Glamour ofrecemos una experiencia única de
+                        cuidado personal...
+                    </p>
+                </div>
+
+                <div class="img-container">
+                    <img
+                        src="https://cdn.pixabay.com/photo/2017/07/25/10/37/woman-2537564_1280.jpg"
+                        alt="imagen_bienvenida"
+                    />
+                </div>
+                <form action="">
+                    <h2>Reserva tu cita</h2>
+                    <input
+                        type="text"
+                        name="nombre"
+                        id="nombre"
+                        placeholder="Nombre completo"
+                    />
+                    <input
+                        type="email"
+                        name="correo"
+                        id="correo"
+                        placeholder="Correo electrónico"
+                    />
+                    <input
+                        type="tel"
+                        name="telefono"
+                        id="telefono"
+                        placeholder="Teléfono de contacto"
+                    />
+                    <textarea
+                        name="comentarios"
+                        id="comentarios"
+                        placeholder="Cuéntanos que necesitas..."
+                    ></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+            <section class="section-crd servicios">
+                <div class="crd-header">
+                    <h2>Servicios</h2>
+                    <p>Explora nuestra selección de tratamientos y cortes para realzar tu estilo personal.</p>
+                </div>
+                <table>
+                    <thead>
+                        <th>Servicio</th>
+                        <th>Precio</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Corte de mujer</td>
+                            <td>20€</td>
+                        </tr>
+                        <tr>
+                            <td>Corte de hombre</td>
+                            <td>15€</td>
+                        </tr>
+                        <tr>
+                            <td>Coloración</td>
+                            <td>35€</td>
+                        </tr>
+                        <tr>
+                            <td>Peinado</td>
+                            <td>18€</td>
+                        </tr>
+                        <tr>
+                            <td>Tratamiento capilar</td>
+                            <td>25€</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class="parallax"></section>
+            <section class="section-crd galeria">
+                <div class="crd-header">
+                    <h2>Galería de imágenes</h2>
+                    <p>Un vistazo a nuestros trabajos más destacados.</p>
+                </div>
+            </section>
+            <section class="section-crd map">
+                <div class="crd-header">
+                    <h2>Dónde encontrarnos</h2>
+                    <p>Ven a visitarnos y déjate mimar en un ambiente acogedor y moderno.</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11815.886458583738!2d-8.72256945!3d42.236419399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f6214434994df%3A0x1c04f585be1fc780!2sVigo%2C%2036202%2C%20Pontevedra!5e0!3m2!1ses!2ses!4v1765285537892!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="section-crd ventajas">
+                <div class="crd-header"><h2>Ventajas de Peluquería Glamour</h2></div>
+                <div class="crd-ventajas">
+                    <h3>Asesoría de imagen</h3>
+                    <p>Te ayudamos a elegir el corte y el color que mejor se adapte a tu rostro y estilo de vida.</p>
+                </div>
+                <div class="crd-ventajas">
+                    <h3>Productos profesionales</h3>
+                    <p>Trabajamos con marcas de alta calidad para cuidar tu cabello en profundidad.</p>
+                </div>
+                <div class="crd-ventajas">
+                    <h3>Ambiente acogedor</h3>
+                    <p>Un espacio tranquilo y moderno para que tu visita se a un momento de relax y bienestar.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>c Peluquería Glamour. Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </footer>
+    </body>
+</html>
