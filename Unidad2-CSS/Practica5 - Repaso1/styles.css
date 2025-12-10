@@ -235,7 +235,7 @@ footer {
     }
         footer .social-media a {
             display: inline-block;
-            padding: 1% 2.5%;
+            padding: 1% 2%;
         }
         footer .social-media  i {
             color:  var(--strong-pink);
