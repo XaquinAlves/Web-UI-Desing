@@ -29,6 +29,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    hyphens: auto;
 }
 
 header .texto-header {
@@ -159,6 +160,9 @@ section.servicios table  {
         background-color: var(--strong-pink);
         color: white;
     }
+    section.servicios table tr:nth-child(even) {
+        background-color: rgba(200,200,200, 0.3);
+    }
 
 section.parallax {
     background-image: url(https://cdn.pixabay.com/photo/2021/11/15/12/06/barber-shop-6797941_1280.jpg);
@@ -169,11 +173,32 @@ section.parallax {
     background-size: cover;
 }
 
+section.sct-galeria .galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    gap: 2%;
+}
+    section.sct-galeria .galeria img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        transition: transform 0.25s ease-in-out;
+    }
+        section.sct-galeria .galeria img:hover {
+            transform: scale(1.05);
+        }
+
 section.map iframe {
     min-height: 400px;
     width: 100%;
 }
 
+section.ventajas .crd-header h2 {
+    text-align: center;
+}
 section.ventajas .crd-ventajas {
     background-color: var(--light-pink);
     border: 1px solid rgba(233, 30, 99, 0.4);
@@ -195,5 +220,65 @@ section.ventajas .crd-ventajas {
     }
 
 footer {
+    background-color: rgba(0,0,0,0.85);
+    text-align: center;
+    border-top: 2px solid var(--strong-pink);
+    clear: both;
+}
+    footer p {
+        color: white;
+        margin-top: 2%;
+    }
+    footer .social-media {
+        display: flex;
+        justify-content: center;
+    }
+        footer .social-media a {
+            display: inline-block;
+            padding: 1% 2.5%;
+        }
+        footer .social-media  i {
+            color:  var(--strong-pink);
+            font-size: 32px;
+            transition: transform 0.25s ease-in-out;
+        }
+            footer .social-media i:hover {
+                transform: scale(1.2);
+                color: white;
+            }
 
+@media (max-width: 768px) {
+    section.bienvenida {
+        grid-template-columns: 1fr;
+    }
+        section.bienvenida .crd-header {
+            grid-column-end: span 1;
+        }
+        section.bienvenida .img-container {
+            margin-bottom: 2%;
+        }
+
+    section.servicios table {
+        font-size: smaller;
+    }
+        section.servicios table th, section.servicios table td {
+            padding: 1%;
+        }
+
+    section.sct-galeria .galeria {
+        grid-template-columns: 1fr;
+        gap: 0%;
+    }
+        section.sct-galeria .galeria div {
+            margin-bottom: 2%;
+        }
+        section.sct-galeria .galeria div:nth-last-child(-n +4) {
+            display: none;
+        }
+
+    section.ventajas .crd-ventajas {
+        width: 100%;
+        height: auto;
+        margin: 2% 1%;
+    }
 }
