@@ -4,55 +4,61 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Grid de Bootstrap</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="./gridbootstrap.css">
-    </head>ç, initial-s
-    <body>
-        <header>
-            <h2>Header</h2>
-            <p>12 columnas</p>
-        </header>
-        <main>
-            <h2>MAIN</h2>
-            <p>8 columnas</p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                malesuada lacinia ipsum, ac congue odio. Donec vel erat in
-                mauris efficitur dictum. Etiam vitae sapien non tortor molestie
-                lobortis. Vestibulum dignissim venenatis dui non feugiat. Sed
-                sapien neque, vehicula eget diam nec, vestibulum volutpat
-                turpis. Aenean suscipit, dolor nec imperdiet aliquet, ligula leo
-                molestie nulla, nec congue purus diam a purus. Donec ornare
-                faucibus lacus. Quisque a pulvinar est. Donec non suscipit mi,
-                porttitor convallis lorem. In faucibus tortor vel nisi imperdiet
-                viverra. Fusce suscipit commodo velit, sed porttitor turpis
-                consequat vel. Donec libero erat, ornare in varius ut, feugiat
-                vitae lacus. Phasellus vulputate volutpat lobortis. Aenean
-                interdum eu elit sed posuere.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-                malesuada lacinia ipsum, ac congue odio. Donec vel erat in
-                mauris efficitur dictum. Etiam vitae sapien non tortor molestie
-                lobortis. Vestibulum dignissim venenatis dui non feugiat. Sed
-                sapien neque, vehicula eget diam nec, vestibulum volutpat
-                turpis. Aenean suscipit, dolor nec imperdiet aliquet, ligula leo
-                molestie nulla, nec congue purus diam a purus. Donec ornare
-                faucibus lacus. Quisque a pulvinar est. Donec non suscipit mi,
-                porttitor convallis lorem. In faucibus tortor vel nisi imperdiet
-                viverra. Fusce suscipit commodo velit, sed porttitor turpis
-                consequat vel. Donec libero erat, ornare in varius ut, feugiat
-                vitae lacus. Phasellus vulputate volutpat lobortis. Aenean
-                interdum eu elit sed posuere.
-            </p>
-        </main>
-        <aside>
-            <h2>ASIDE</h2>
-            <p>4 columnas</p>
-        </aside>
-        <div class="widget-container">
-            <div class="widget">
-                <p>3 columnas</p>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./gridbootstrap.css" />
+    </head>
+    <body class="container">
+        <div class="row">
+            <header class="col-12 col-sm-12 p-3 p-sm-3">
+                <h2>Header</h2>
+                <p>12 columnas</p>
+            </header>
+        </div>
+        <div class="row mt-5 mt-sm-4">
+            <main class="col-12 col-md-8 p-3 p-sm-3">
+                <h2>MAIN</h2>
+                <p class="d-none d-md-block">8 columnas</p>
+                <p class="d-md-none">12 columnas</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras malesuada lacinia ipsum, ac congue odio. Donec vel erat
+                    in mauris efficitur dictum. Etiam vitae sapien non tortor
+                    molestie lobortis. Vestibulum dignissim venenatis dui non
+                    feugiat. Sed sapien neque, vehicula eget diam nec,
+                    vestibulum volutpat turpis. Aenean suscipit, dolor nec
+                    imperdiet aliquet, ligula leo molestie nulla, nec congue
+                    purus diam a purus.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Cras malesuada lacinia ipsum, ac congue odio. Donec vel erat
+                    in mauris efficitur dictum. Etiam vitae sapien non tortor
+                    molestie lobortis. Vestibulum dignissim venenatis dui non
+                    feugiat. Sed sapien neque, vehicula eget diam nec,
+                    vestibulum volutpat turpis. Aenean suscipit, dolor nec
+                    imperdiet aliquet, ligula leo molestie nulla, nec congue
+                    purus diam a purus.
+                </p>
+            </main>
+            <aside class="col-12 col-md-4 p-3 p-sm-3 my-md-5">
+                <h2 class="mt-md-5 pt-md-4">ASIDE</h2>
+                <p class="d-none d-md-block">4 columnas</p>
+                <p class="d-md-none">12 columnas</p>
+            </aside>
+        </div>
+
+        <div
+            class="row d-md-flex mt-md-4 justify-content-lg-between justify-content-md-center"
+        >
+            <div class="widget col-12 col-md-4 col-lg-3 p-3 p-sm-3">
+                <p class="d-none d-lg-block">3 columnas</p>
+                <p class="d-none d-md-block d-lg-none">4 columnas</p>
+                <p class="d-md-none">12 columnas</p>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Cras malesuada lacinia ipsum, ac congue odio. Donec vel erat
@@ -62,8 +68,10 @@
                     vestibulum volutpat turpis.
                 </p>
             </div>
-            <div class="widget">
-                <p>3 columnas</p>
+            <div class="widget col-12 col-md-4 col-lg-3 p-3 p-sm-3">
+                <p class="d-none d-lg-block">3 columnas</p>
+                <p class="d-none d-md-block d-lg-none">4 columnas</p>
+                <p class="d-md-none">12 columnas</p>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Cras malesuada lacinia ipsum, ac congue odio. Donec vel erat
@@ -73,8 +81,10 @@
                     vestibulum volutpat turpis.
                 </p>
             </div>
-            <div class="widget">
-                <p>3 columnas</p>
+            <div class="widget col-12 col-md-4 col-lg-3 p-3 p-sm-3">
+                <p class="d-none d-lg-block">3 columnas</p>
+                <p class="d-none d-md-block d-lg-none">4 columnas</p>
+                <p class="d-md-none">12 columnas</p>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Cras malesuada lacinia ipsum, ac congue odio. Donec vel erat
@@ -85,9 +95,16 @@
                 </p>
             </div>
         </div>
-        <footer>
-            <p>12 columnas</p>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <div class="row">
+            <footer class="col-12 col-sm-12 mt-5 mt-sm-4 p-3 p-sm-3">
+                <h2>Footer</h2>
+                <p>12 columnas</p>
+            </footer>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>
