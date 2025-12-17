@@ -1,12 +1,3 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 header {
     background-color: #9aca40;
 }
@@ -15,21 +6,14 @@ body {
     background-color: #f0f3f5;
 }
 
-main {
-    background-color: white;
-}
-
 aside {
-    background-color: lightgrey;
     color: #0d47a1;
 }
 
 .widget {
     background-color: #2196f3;
-    color: white;
 }
 
 footer {
     background-color:  #1e1e1e;
-    color: white;
 }
