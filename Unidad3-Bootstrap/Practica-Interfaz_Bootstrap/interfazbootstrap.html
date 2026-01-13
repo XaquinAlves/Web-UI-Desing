@@ -12,10 +12,10 @@
         />
     </head>
     <body class="container-fluid">
-        <header class="row mb-3 mb-md-3 fs-5" id="inicio">
+        <header class="row mb-3 mb-md-3 fs-5 bg-dark px-5" id="inicio">
             <nav
                 class="navbar navbar-expand-lg navbar-dark bg-dark px-5"
-                data-bs-theme="dark"
+                data-bs-theme="light"
             >
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
@@ -56,15 +56,15 @@
                             <ul class="dropdown-menu bg-white fs-5">
                                 <li>
                                     <a
-                                        class="dropdown-item text-black"
+                                        class="dropdown-item link-dark"
                                         href="#"
                                     >
                                         Computadoras
                                     </a>
                                 </li>
-                                <li>
+                                <li class="bg-hover-secondary">
                                     <a
-                                        class="dropdown-item text-black"
+                                        class="dropdown-item link-dark"
                                         href="#"
                                     >
                                         Laptops
@@ -102,7 +102,7 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input
-                            class="form-control me-2 bg-light text-secondary"
+                            class="form-control me-2 bg-white text-secondary"
                             type="search"
                             placeholder="Buscar"
                             aria-label="Search"
@@ -115,7 +115,7 @@
                 </div>
             </nav>
         </header>
-        <main>
+        <main class="mx-5">
             <div class="row mb-3 mb-md-3 mx-5 mx-md-5">
                 <div
                     id="carouselCabecera"
@@ -346,7 +346,8 @@
                 </div>
             </div>
         </main>
-        <footer class="row mx-5 mb-5 mb-sm-5">
+        <div class="mx-5">
+            <footer class="row mx-5 mb-5 mb-sm-5">
             <hr class="mb-5 mb-sm-5" />
             <h4 class="text-secondary col-6 col-sm-6 mb-2 mb-sm-2 fw-light">
                 IES Pazo da Merce
@@ -354,11 +355,13 @@
             <a href="#inicio" class="col-6 col-sm-6 text-end text-sm-end fs-5">
                 Subir en página
             </a>
-            <a href="#" class="link-primary col-2 col-xl-1 ms-2 ms-md-2 fs-5">
+            <a href="#" class="link-primary col-3 col-md-2 col-xl-1 ms-2 ms-md-2 fs-5">
                 Acerca de
             </a>
-            <a href="#" class="link-primary col-2 col-xl-1 fs-5"> Contacto </a>
+            <a href="#" class="link-primary col-3 col-md-2 col-xl-1 fs-5"> Contacto </a>
         </footer>
+        </div>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
