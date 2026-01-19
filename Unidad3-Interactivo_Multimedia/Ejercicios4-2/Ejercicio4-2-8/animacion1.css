@@ -1,0 +1,24 @@
+#rectangulo {
+    width:  400px;
+    height: 300px;
+    background-color: red;
+    margin: 10%;
+}
+
+#rectangulo:hover {
+    animation: coloresEncoger 3s 1;
+}
+
+@keyframes coloresEncoger {
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: yellowgreen;
+    }
+    100% {
+        background-color: green;
+        transform: scale(0.5);
+    }
+
+}

@@ -1,0 +1,17 @@
+.cuadrado {
+    width: 30px;
+    height: 30px;
+    margin: 2%;
+    background-color: red;
+}
+
+.cuadrado:hover {
+    animation: rectangular 1.5s 1;
+}
+
+@keyframes rectangular {
+    100% {
+        background-color: blue;
+        transform: scaleX(2);
+    }
+}
