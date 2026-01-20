@@ -1,0 +1,96 @@
+div {
+    background-color: #a8cf45;
+    margin: 50px 50px;
+    padding: 5px 40px;
+    text-align: center;
+    font-weight: bolder;
+    width: 80px;
+}
+
+.balanceo:hover {
+    animation: 1s balanceo 1;
+}
+@keyframes balanceo {
+    20% {
+        transform: scale(0.7) rotate(-6deg);
+    }
+    30%, 70% {
+        transform: scale(1.1) rotate(6deg);
+    }
+    50%, 90% {
+        transform: scale(1.1) rotate(-6deg);
+    }
+}
+
+.click:hover {
+    animation: 0.7s click 1;
+}
+@keyframes click {
+    25%, 75% {
+        transform: scale(0.8);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.chicle:hover {
+    animation: 1s chicle 1;
+}
+@keyframes chicle {
+    30% {
+        transform: scaleX(1.25) scaleY(0.75);
+    }
+    50% {
+        transform: scaleX(0.75) scaleY(1.25);
+    }
+    60% {
+        transform: scaleX(1.15) scaleY(0.85);
+    }
+}
+
+.fadein {
+    animation: 10s fadein 1;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+.flash:hover {
+    animation: 0.7s flash 6;
+}
+@keyframes flash {
+    50% {
+        opacity: 1;
+    }
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+.vaiven:hover {
+    animation: 1s vaiven 1;
+}
+@keyframes vaiven {
+    15% {
+        transform: rotate(-10deg) translateX(-25%);
+    }
+    30% {
+        transform: rotate(5deg) translateX(20%);
+    }
+    45% {
+        transform: rotate(-3deg) translateX(-10%);
+    }
+    60% {
+        transform: rotate(2deg) translateX(5%);
+    }
+    75% {
+        transform: rotate(-1deg) translateX(-3%);
+    }
+}
